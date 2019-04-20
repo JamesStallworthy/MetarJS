@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>MetarJS</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="app.js"></script>
+        <div id="container">
+            <div id="content">
+                <div id="title">
+                    <h1>MetarJS</h1>
+                </div>
+                <div id="search">
+                    <input type="text" id="icao" placeholder="ICAO">
+                    <select>
+                            <option value="volvo">Raw</option>
+                            <option value="saab">Decoded</option>
+                    </select>
+                    <button type="button" onclick="fetch()">Go!</button>
+                </div>
+                <div id="results">
+                    Results will be here...
+                </div>
+            </div>
+            <div id="footer">Copyright &copy; 2019 James Stallworthy</div>
+        </Div>
+    </body>
+</html>
