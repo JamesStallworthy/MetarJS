@@ -13,10 +13,14 @@
     padding: 0%;
 }
 
+#footer a {
+    font-weight: bold;
+}
+
 #content {
     margin: 0;
     position: absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
@@ -27,19 +31,74 @@
 #title {
     font-size: xx-large;
     color: #66CCFF;
-    font-weight: bold
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #007dbb
 }
 
 #search {
     font-size: xx-large;
     color: #66CCFF;
-    font-weight: bold
+    font-weight: bold;
+    margin-bottom: 5%;
 }
 
+#resultscontainer{
+    padding: 2%;
+    margin: 0%;
+    background-color: #cacaca2c;
+    border-radius: 15px;
+    box-shadow: 2px 2px #5353532c;
+}
 #results {
     font-size: large;
-    margin-top: 20px;
-    font-weight: bold
+    font-weight: bold;
+    padding: 5px;
+    padding-top: 10px;
+    color: #494949;
+}
+
+#airportmeta{
+    margin-top: 0%;
+    padding: 0px;
+    font-weight: bold;
+    display: inline-block;
+    width: auto;
+    color: #494949;
+}
+#airportname{
+    padding: 0px;
+    float: left;
+    color: #494949;
+}
+#flightrules{
+    margin: 0px;
+    float: right;
+    padding-left: 5px;
+    font-size: xx-small;
+}
+
+#resultstable{
+    align-content: center;
+}
+
+tr{
+    margin-top: 2%;
+}
+
+td[id=leftcol]{
+    font-family: Helvetica, Arial, sans-serif;
+    color: #66CCFF;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 10px;
+}
+
+td[id=rightcol]{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    color: #494949;
+    padding-right: 10px;
 }
 
 #content input[type=text], select {
@@ -58,5 +117,40 @@
 }
 
 #content button:hover {
-    background-color: #45a049;
+    background-color: #007dbb;
+}
+
+h1 {
+    margin: 30px
+}
+
+.VFRdot {
+    height: 15px;
+    width: 15px;
+    background-color: #07cf00;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.MVFRdot {
+    height: 15px;
+    width: 15px;
+    background-color: #1d00c4;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.IFRdot {
+    height: 15px;
+    width: 15px;
+    background-color: #c70000;
+    border-radius: 50%;
+    display: inline-block;
+}
+.LIFRdot {
+    height: 15px;
+    width: 15px;
+    background-color: #a50089;
+    border-radius: 50%;
+    display: inline-block;
 }
