@@ -55,7 +55,12 @@ function decode(data){
     
     //Altimiter
     report = report + "<tr><td id=\"leftcol\">Altimeter</td><td id=\"rightcol\">"+data.altimeter.repr+" "+data.units.altimeter+"</td></tr>"
-    //Clouds #TODO add this reporting
+    //Clouds
+    cloud = ""
+    $.each(data.clouds,function(index,item){
+        cloud = cloud + item.type + " at " + item.altitude*100 +data.units.altitude+"<br>";
+    });
+    report = report + "<tr><td id=\"leftcol\">Clouds</td><td id=\"rightcol\">"+cloud+"</td></tr>"
 
     //Vis
     report = report + "<tr><td id=\"leftcol\">Visiblity</td><td id=\"rightcol\">"+data.visibility.value+" "+data.units.visibility+"</td></tr>"
@@ -69,3 +74,10 @@ function decode(data){
     report = report + "</table>"
     $('#results').html(report);
 }
+
+
+$(document).on('keypress',function(e) {
+    if(e.which == 13) {
+        fetch();
+    }
+});
