@@ -66,7 +66,7 @@ function decode(data){
     report = report + "<tr><td id=\"leftcol\">Visiblity</td><td id=\"rightcol\">"+data.visibility.value+" "+data.units.visibility+"</td></tr>"
 
     //Temp
-    report = report + "<tr><td id=\"leftcol\">Temprature</td><td id=\"rightcol\">"+data.temperature.value+" "+data.units.temperature+"</td></tr>"
+    report = report + "<tr><td id=\"leftcol\">Temperature</td><td id=\"rightcol\">"+data.temperature.value+" "+data.units.temperature+"</td></tr>"
     report = report + "<tr><td id=\"leftcol\">Dew point</td><td id=\"rightcol\">"+data.dewpoint.value+" "+data.units.temperature+"</td></tr>"
     //Remarks
     report = report + "<tr><td id=\"leftcol\">Remarks</td><td id=\"rightcol\">"+data.remarks+"</td></tr>"
